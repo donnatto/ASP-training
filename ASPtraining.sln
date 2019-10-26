@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETapp", "ASPNETapp\ASPNETapp.csproj", "{56B9DD93-2376-485F-B40A-E73C2C499AA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApplication", "ASPNETapp\MVCApplication.csproj", "{56B9DD93-2376-485F-B40A-E73C2C499AA3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApplication", "WebFormsApplication\WebFormsApplication.csproj", "{DCC43268-F049-4724-B93A-A36D8A23A62F}"
 EndProject
