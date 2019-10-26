@@ -16,6 +16,13 @@ namespace WebFormsApplication
 			// Code that runs on application startup
 			RouteConfig.RegisterRoutes(RouteTable.Routes);
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+			Application["ApplicationStartDateTime"] = DateTime.Now;
+		}
+
+		void Session_Start(object sender, EventArgs e)
+		{
+			Session["SessionDateTime"] = DateTime.Now;
 		}
 	}
 }

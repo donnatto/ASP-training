@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NewsletterSignup.aspx.cs" Inherits="WebFormsApplication.NewsletterSignup" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NewsletterSignup.aspx.cs" Inherits="WebFormsApplication.NewsletterSignup" ViewStateMode="Disabled" %>
 
 <!DOCTYPE html>
 
@@ -16,7 +16,7 @@
         </div>
         <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
 &nbsp;
-        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtEmail" runat="server" ViewStateMode="Disabled"></asp:TextBox>
         <br />
         <br />
         <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
