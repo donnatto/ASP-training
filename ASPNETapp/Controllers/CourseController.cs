@@ -10,11 +10,25 @@ namespace ASPNETapp.Controllers
 {
     public class CourseController : Controller
     {
+		private RouxAcademyDbContext db = new RouxAcademyDbContext();
+
         // GET: Course
         public ActionResult Index()
         {
             return View();
         }
+
+		public ActionResult Online()
+		{
+			// var courses = db.Courses.Where(c => c.IsVirtual).OrderBy(c => c.Name).ToList();
+
+			var courses = from c in db.Courses
+						 where c.IsVirtual
+						 orderby c.Name
+						 select c;
+
+			return View(courses.ToList());
+		}
 
         // GET: Course/Details/5
         public ActionResult Details(int id)
