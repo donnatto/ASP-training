@@ -1,4 +1,5 @@
-﻿using ASPNETapp.Models;
+﻿using ASPNETapp.DataAccess;
+using ASPNETapp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,8 +36,12 @@ namespace ASPNETapp.Controllers
             {
 				if (ModelState.IsValid)
 				{
-                // TODO: Add insert logic here
-
+					using (var context = new RouxAcademyDbContext())
+					{
+						context.Courses.Add(course);
+						context.SaveChanges();
+					}
+					
                 return RedirectToAction("Index");
 				}
 
